@@ -4,17 +4,62 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <group android:scaleX="0.85" android:scaleY="0.85" android:translateX="8.1" android:translateY="8.1">
-        <path
-            android:fillColor="#FFFFFF"
-            android:fillAlpha="0.9"
-            android:pathData="M54,12c23.2,0 42,18.8 42,42s-18.8,42 -42,42 -42,-18.8 -42,-42 18.8,-42 42,-42z"/>
-        <path
-            android:fillColor="#000000"
-            android:fillAlpha="0.1"
-            android:pathData="M20,40c10,-18 46,-18 56,0 2,3 -1,6 -5,5 -16,-4 -30,-4 -46,0 -4,1 -7,-2 -5,-5z"/>
-        <path
-            android:fillColor="#0E1116"
-            android:pathData="M32,60c8,-10 36,-10 44,0 1.5,2 -0.5,4 -3,4 -12,-2 -26,-2 -38,0 -2.5,0 -4.5,-2 -3,-4z"/>
-    </group>
+    
+    <!-- Frosted glass background with gradient -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.25"
+        android:pathData="M20,20h68v68h-68z"
+        android:strokeWidth="1"
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.3" />
+    
+    <!-- Inner glow -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.15"
+        android:pathData="M24,24h60v60h-60z" />
+    
+    <!-- Text: Slope -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M30,42 Q30,40 32,40 L36,40 Q38,40 38,42 Q38,43 37,43.5 L33,45 Q35,45 35,47 Q35,49 33,49 L31,49 Q29,49 29,47 L30,47 Q30,48 31,48 L33,48 Q34,48 34,47 Q34,46 33,46 L31,46 Q29,46 29,44 Q29,43.5 30,43 L34,41 Q35,41 35,42 Q35,43 34,43 L32,43 Q30,43 30,42 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M40,40 L41,40 L41,48 L44,48 L44,49 L40,49 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M46,40 Q48,40 49,41 Q50,42 50,44.5 Q50,47 49,48 Q48,49 46,49 Q44,49 43,48 Q42,47 42,44.5 Q42,42 43,41 Q44,40 46,40 Z M46,41 Q44.5,41 43.5,42 Q43,43 43,44.5 Q43,46 43.5,47 Q44.5,48 46,48 Q47.5,48 48.5,47 Q49,46 49,44.5 Q49,43 48.5,42 Q47.5,41 46,41 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M52,40 L56,40 Q58,40 58,42 Q58,44 56,44 L53,44 L53,49 L52,49 Z M53,41 L53,43 L56,43 Q57,43 57,42 Q57,41 56,41 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M60,40 L64,40 L64,41 L61,41 L61,44 L63.5,44 L63.5,45 L61,45 L61,48 L64,48 L64,49 L60,49 Z" />
+    
+    <!-- Text: OS -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M42,54 Q44,54 45,55 Q46,56 46,58.5 Q46,61 45,62 Q44,63 42,63 Q40,63 39,62 Q38,61 38,58.5 Q38,56 39,55 Q40,54 42,54 Z M42,55 Q40.5,55 39.5,56 Q39,57 39,58.5 Q39,60 39.5,61 Q40.5,62 42,62 Q43.5,62 44.5,61 Q45,60 45,58.5 Q45,57 44.5,56 Q43.5,55 42,55 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.95"
+        android:pathData="M48,54 Q48,52 50,52 L54,52 Q56,52 56,54 Q56,55 55,55.5 L51,57 Q53,57 53,59 Q53,61 51,61 L49,61 Q47,61 47,59 L48,59 Q48,60 49,60 L51,60 Q52,60 52,59 Q52,58 51,58 L49,58 Q47,58 47,56 Q47,55.5 48,55 L52,53 Q53,53 53,54 Q53,55 52,55 L50,55 Q48,55 48,54 Z" />
+    
+    <!-- Subtle shadow for depth -->
+    <path
+        android:fillColor="#000000"
+        android:fillAlpha="0.1"
+        android:pathData="M22,86 L86,86 L84,88 L24,88 Z" />
 </vector>
