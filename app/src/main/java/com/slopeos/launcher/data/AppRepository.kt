@@ -1,5 +1,6 @@
 package com.slopeos.launcher.data
 
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -37,7 +38,7 @@ class AppRepository(private val context: Context) {
     }
 
     fun getAppIcon(entry: AppEntry): Drawable? = try {
-        pm.getActivityIcon(entry.className)
+        pm.getActivityIcon(ComponentName(entry.packageName, entry.className))
     } catch (_: Exception) {
         try { pm.getApplicationIcon(entry.packageName) } catch (_: Exception) { null }
     }
